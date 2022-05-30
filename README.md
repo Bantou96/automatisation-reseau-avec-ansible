@@ -4,7 +4,7 @@ Etant jeune ingénieur en sécurité des systèmes et des communications, j'ai t
 L'objectif est de répondre au besoin d'automatisation et donc de simplification des tâches de configurations réseaux (création, suppression et modification).
 J'ai essentiellement travaillé sur la partie automatisation de la configuration des équipements réseaux particulièrement ceux de Cisco. 
 
-J'ai implémenté la solution Ansible qui comporte des modules réseaux permettant de configurer toute la pile réseau, de tester et de valider l'état d'un réseau. 
+La solution Ansible est aujourd'hui très utilisée car elle comporte des modules réseaux permettant de configurer toute la pile d'equipements niveau 2 et 3, de tester et de valider les changements apportés. 
 
 J'espère que vous allez prendre du plaisir à explorer l'outil Ansible et à découvrir le langage Yaml qui est tout simplement du texte.
 
