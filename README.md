@@ -79,6 +79,7 @@ Les collections sont un format de distribution pour du contenu Ansible qui peut 
 
 Pour démarrer une gestion Ansible, on a besoin d’un inventaire. Par défaut, Ansible représente les machines qu’il gère à l’aide d’un fichier INI très simple qui place toutes les machines gérées dans des groupes de notre choix. Une fois que les hôtes d’inventaire sont répertoriés, des variables portant sur les cibles de gestion, peuvent leur être attribuées dans des fichiers texte simples. 
 
+![diagramme](./images/diag.png)
 
 ## Exécution des tâches
 
