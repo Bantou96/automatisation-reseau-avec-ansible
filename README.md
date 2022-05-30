@@ -4,17 +4,19 @@ Etant jeune ingénieur en sécurité des systèmes et des communications, j'ai t
 L'objectif est de répondre au besoin d'automatisation et donc de simplification des tâches de configurations réseaux (création, suppression et modification).
 J'ai essentiellement travaillé sur la partie automatisation de la configuration des équipements réseaux particulièrement ceux de Cisco. 
 
-La solution Ansible est aujourd'hui très utilisée car elle comporte des modules réseaux permettant de configurer toute la pile d'equipements niveau 2 et 3, de tester et de valider les changements apportés. 
+La solution **Ansible** est aujourd'hui très utilisée car elle comporte des modules réseaux permettant de configurer toute la pile d'equipements niveau 2 et 3, de tester et de valider les changements apportés. 
 
-J'espère que vous allez prendre du plaisir à explorer l'outil Ansible et à découvrir le langage Yaml qui est tout simplement du texte.
+J'espère que vous allez prendre du plaisir à explorer l'outil Ansible et à découvrir le langage **Yaml** qui est tout simplement du texte.
 
 ![octocat](./images/enjoy.png)
 
-## Repositories
+## Choix de l'outil Ansible
+l’utilisation d’un outil qui implique l’installation de modules sur chaque agent de notre réseau serait encore plus fastidieuse et rendrait l’idée d’automatisation très compliquée. Cette problématique m’a permis de réfléchir d’abord sur le choix d'un outil **sans agent**.
 
-Right now, we’re in your first GitHub **repository**. A repository is like a folder or storage space for your project. Your project's repository contains all its files such as code, documentation, images, and more. It also tracks every change that you—or your collaborators—make to each file, so you can always go back to previous versions of your project if you make any mistakes.
+Quand on est responsable d’un réseau d’entreprise, on sait probablement que de nombreuses opérations manuelles sont effectuées via l’interface de ligne de commande (CLI). Il n’est pas surprenant que le principal défi que rencontrent des utilisateurs en matière de réseau consiste à améliorer leur agilité.
 
-This repository contains three important files: The HTML code for your first website on GitHub, the CSS stylesheet that decorates your website with colors and fonts, and the **README** file. It also contains an image folder, with one image file.
+![octocat](./images/cli-use.png)
+
 
 ## Describe your project
 
