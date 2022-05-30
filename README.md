@@ -1,6 +1,14 @@
-# Welcome to GitHub
+# Welcome
+Etant jeune ingénieur en sécurité des systèmes et des communications, j'ai très vite compris qu'avoir des compétences scripting rendrait les tâches d'administration moins fastidieuses surtout lorsqu'on évolue dans les entreprises de grande taille.
 
-Welcome to GitHub—where millions of developers work together on software. Ready to get started? Let’s learn how this all works by building and publishing your first GitHub Pages website!
+L'objectif est de répondre au besoin d'automatisation et donc de simplification des tâches de configurations réseaux (création, suppression et modification).
+J'ai essentiellement travaillé sur la partie automatisation de la configuration des équipements réseaux particulièrement ceux de Cisco. 
+
+J'ai implémenté la solution Ansible qui comporte des modules réseaux permettant de configurer toute la pile réseau, de tester et de valider l'état d'un réseau. 
+
+J'espère que vous allez prendre du plaisir à explorer l'outil Ansible et à découvrir le langage Yaml qui est tout simplement du texte.
+
+Enjoy !!!!
 
 ## Repositories
 
