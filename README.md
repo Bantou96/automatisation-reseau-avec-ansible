@@ -79,7 +79,13 @@ Les collections sont un format de distribution pour du contenu Ansible qui peut 
 
 Pour démarrer une gestion Ansible, on a besoin d’un inventaire. Par défaut, Ansible représente les machines qu’il gère à l’aide d’un fichier INI très simple qui place toutes les machines gérées dans des groupes de notre choix. Une fois que les hôtes d’inventaire sont répertoriés, des variables portant sur les cibles de gestion, peuvent leur être attribuées dans des fichiers texte simples. 
 
+Un jeu est une analogie sportive qui définit un état ou un modèle.
+
 ![diagramme](./images/diag.png)
+
+Chaque livre de jeu est composé d’une ou plusieurs “séances de jeu (plays)” exposés sous forme d’une liste.
+Un “livre de jeu” organise des tâches en jeux. Le module quant à lui permet d'exécuter une serie d'actions.
+Mais il serait une bonne pratique de l’organiser en rôles. Un rôle ajoute un niveau d’abstraction dans l’exécution des tâches d’un livre de jeu. 
 
 ## Exécution des tâches
 
@@ -87,6 +93,20 @@ Dans la partie exécution des tâches nous avons d’autres termes qui sont util
 Une tâche est l’appel à un module Ansible. Le module Ansible contient localement tout le code utile à l’exécution. Il est donc important de disposer du code à jour des modules et de pouvoir exécuter du code python car c’est le langage qui est utilisé en background au niveau du nœud principal dans notre cas puisqu’on agit sur des équipements réseaux. 
 
 ![execution](./images/execution.png)
+
+Il existe deux principaux modes d’exécution des tâches avec Ansible :
+
+- **Le mode Ad-Hoc**
+
+Il permet l’exécution de tâches parallèles. Dès qu’une instance est disponible, on peut lui parler immédiatement, sans aucune configuration supplémentaire. Un accès à des modules de ressources basés sur des états, ainsi qu’à des commandes brutes est disponible. Ces modules sont assez faciles à écrire.
+
+- **Les Playbooks (Livres de jeu)**
+
+Les livres de jeu (playbooks) sont écrits selon un langage d’automatisation simple et puissant. Les livres de jeu peuvent orchestrer avec précision plusieurs parties d’une topologie d’infrastructure, avec un contrôle très détaillé du nombre de machines à traiter à la fois.
+Les livres de jeu sont écrits en langage YAML, Ain’t Markup Language. YAML expose un minimum de syntaxe et propose un modèle de configuration ou de processus plutôt qu’un langage de script ou de programmation.
+
+J’ai pratiquement utilisé que le mode d’exécution Playbooks dans la phase implémentation de la solution. 
+
 
 ## Practice: Customize your first GitHub website by writing HTML code
 
