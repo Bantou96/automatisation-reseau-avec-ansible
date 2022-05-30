@@ -8,7 +8,7 @@ La solution Ansible est aujourd'hui très utilisée car elle comporte des module
 
 J'espère que vous allez prendre du plaisir à explorer l'outil Ansible et à découvrir le langage Yaml qui est tout simplement du texte.
 
-Enjoy !!!!
+![octocat](./images/enjoy.png)
 
 ## Repositories
 
