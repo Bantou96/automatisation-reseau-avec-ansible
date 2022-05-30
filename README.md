@@ -8,14 +8,14 @@ La solution **Ansible** est aujourd'hui très utilisée car elle comporte des mo
 
 J'espère que vous allez prendre du plaisir à explorer l'outil Ansible et à découvrir le langage **Yaml** qui est tout simplement du texte.
 
-![octocat](./images/enjoy.png)
+![enjoy](./images/enjoy.png)
 
 ## Choix de l'outil Ansible
 l’utilisation d’un outil qui implique l’installation de modules sur chaque agent de notre réseau serait encore plus fastidieuse et rendrait l’idée d’automatisation très compliquée. Cette problématique m’a permis de réfléchir d’abord sur le choix d'un outil **sans agent**.
 
 Quand on est responsable d’un réseau d’entreprise, on sait probablement que de nombreuses opérations manuelles sont effectuées via l’interface de ligne de commande (CLI). Il n’est pas surprenant que le principal défi que rencontrent des utilisateurs en matière de réseau consiste à améliorer leur agilité.
 
-![octocat](./images/cli-use.png)
+![cli](./images/cli-use.png)
 
 
 ## Describe your project
