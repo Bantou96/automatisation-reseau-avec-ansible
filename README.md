@@ -11,8 +11,10 @@ J'ai essentiellement travaillé sur la partie automatisation de la configuration
 
 Les logiciels d'automatisation sont aujourd'hui de plus en plus utilisés car elles comportent des modules réseaux permettant de configurer toute la pile d'equipements niveau 2 et 3, de tester et de valider les changements apportés. 
 
+
+![start]
 <p align="center">
-![start](./images/let's-start.jpg)
+  (./images/let's-start.jpg)
 </p>
 
 ## Choix de l'outil d'automatisation
