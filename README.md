@@ -19,7 +19,7 @@ Au niveau le plus basique, il est possible d'automatiser les composants réseau 
 
 Les outils d’automatisation open source Ansible, Salt et StackStorm peuvent être utilisés pour automatiser les périphériques réseau. 
 
-![tableau](./images/tableau.png)
+![tableau](./images/tableau.PNG)
 
 l’utilisation d’un outil qui implique l’installation de modules sur chaque équipement de notre réseau serait encore plus fastidieuse et rendrait l’idée d’automatisation très compliquée. Cette problématique m’a permis de réfléchir d’abord sur le choix d'un outil **sans agent**.
 
