@@ -23,7 +23,7 @@ Les outils d’automatisation open source Ansible, Salt et StackStorm peuvent ê
 
 l’utilisation d’un outil qui implique l’installation de modules sur chaque équipement de notre réseau serait encore plus fastidieuse et rendrait l’idée d’automatisation très compliquée. Cette problématique m’a permis de réfléchir d’abord sur le choix d'un outil **sans agent**.
 
-Pour la suite de cet aventure sur l'automatisation réseau nous allons travaillé avec l'outil Ansible qui a l'avantage d'avoir une grande communauté, une documentation assez fournie et un langage **Yaml** qui est tout simplement du texte. 
+Pour la suite de cette aventure sur l'automatisation réseau nous allons travaillé avec l'outil Ansible qui a l'avantage d'avoir une grande communauté, une documentation assez fournie et un langage **Yaml** qui est tout simplement du texte. 
 
 Cool non !!!
 
