@@ -61,19 +61,17 @@ Ansible Engine utilise différents composants comme :
 
 ## Définition des termes
 
-We've already set-up a GitHub Pages website for you, based on your personal username. This repository is called `hello-world`, but you'll rename it to: `username.github.io`, to match your website's URL address. If the first part of the repository doesn’t exactly match your username, it won’t work, so make sure to get it right.
+	Les modules
+Les modules sont “les outils dans la boîte-à-outils”.
+Ansible fonctionne en se connectant aux nœuds à gérer et en leur envoyant des petits programmes, appelés “modules Ansible”. Ces programmes sont écrits pour être des modèles de ressources de l’état souhaité du système. Ansible exécute ensuite ces modules (via SSH par défaut) grâce au protocole JSON sur la sortie standard et les supprime lorsque l’action est terminée.
+La bibliothèque de modules peut résider sur n’importe quelle machine et sans aucun serveur central, démon ou base de données. Rien n’interdit d’écrire son propre module. Ces modules peuvent contrôler les ressources comme des services, des paquets ou des fichiers (n’importe quoi en réalité), ou encore exécuter des commandes système.
+	Les plugins de connexion
+Les plug-ins de connexion permettent à Ansible de se connecter aux hôtes cibles afin d’exécuter des tâches sur ceux-ci. Ansible est livré avec de nombreux plugins de connexion, mais un seul peut être utilisé par hôte à la fois. Les plus utilisés sont les types de connexion Paramiko SSH, SSH natif (appelé simplement SSH) et local. 
+	Les collections
+Les collections sont un format de distribution pour du contenu Ansible qui peut inclure des livres de jeu, des rôles, des modules et des plugins. Les collections sont distribuées par Ansible Galaxy. 
+	L’inventaire
+Pour démarrer une gestion Ansible, on a besoin d’un inventaire. Par défaut, Ansible représente les machines qu’il gère à l’aide d’un fichier INI très simple qui place toutes les machines gérées dans des groupes de notre choix. Une fois que les hôtes d’inventaire sont répertoriés, des variables portant sur les cibles de gestion, peuvent leur être attribuées dans des fichiers texte simples. 
 
-Let's get started! To update this repository’s name, click the `Settings` tab on this page. This will take you to your repository’s settings page. 
-
-![repo-settings-image](https://user-images.githubusercontent.com/18093541/63130482-99e6ad80-bf88-11e9-99a1-d3cf1660b47e.png)
-
-Under the **Repository Name** heading, type: `username.github.io`, where username is your username on GitHub. Then click **Rename**—and that’s it. When you’re done, click your repository name or browser’s back button to return to this page.
-
-<img width="1039" alt="rename_screenshot" src="https://user-images.githubusercontent.com/18093541/63129466-956cc580-bf85-11e9-92d8-b028dd483fa5.png">
-
-Once you click **Rename**, your website will automatically be published at: https://your-username.github.io/. The HTML file—called `index.html`—is rendered as the home page and you'll be making changes to this file in the next step.
-
-Congratulations! You just launched your first GitHub Pages website. It's now live to share with the entire world
 
 ## Making your first edit
 
