@@ -29,6 +29,9 @@ Cool non !!!
 ![enjoy](./images/enjoy.png)
 
 ## Présentation
+**Un peu d'histoire**
+Une « ansible » est un dispositif théorique permettant de réaliser des communications à une vitesse supraluminique (supérieure à la vitesse de la lumière) imaginé en 1966 par Ursula K. Le Guin dans son roman de science-fiction, Le Monde de Rocanon.  
+
 Parmi les outils d’automatisation des configurations et des déploiements, Ansible fait partie des plus populaires. Il a été conçu par un ancien employé Red Hat, Michael DeHaan, également auteur de l’application de serveur de « provisionning » Cobbler et co-acteur du framework Func pour l’administration à distance. Red Hat a racheté la société Ansible,Inc en octobre 2015. 
 
 ![ansible](./images/ansible.png)
@@ -43,7 +46,15 @@ Il répond aux besoins des Admin système / Cloud, aux admins de stockage pour u
 Ansible fonctionne sur de nombreux systèmes de type Unix, et peut configurer aussi bien des systèmes de type Unix que Microsoft Windows. L’outil est sans agent car il n’est pas nécessaire d’installer des logiciels supplémentaires sur les nœuds secondaires. Il faut juste qu’Ansible puisse se connecter temporairement à distance via **SSH** ou **Windows Remote Management** (permettant l’exécution à distance de PowerShell) pour effectuer ses tâches. 
 Ansible gère les différents équipements avec un accès à distance natif (tels que les protocoles cités ci-dessus) et il comprend son propre langage déclaratif pour décrire la configuration du système. Il offre des capacités de parallélisation, collecte de métadonnées et gestion des états. L’aspect de conception « agentless » installé sur le périphérique est important car il réduit les besoins d’infrastructure pour démarrer une gestion. 
 Les modules fonctionnent grâce à **JSON** en sortie standard et peuvent être écrits dans n’importe quel langage de programmation. Le système utilise notamment **YAML** pour exprimer des descriptions réutilisables et traite les variables grâce à des modèles Jinja2.  
-Manipuler Ansible consiste à écrire du texte géré sous forme de code informatique. En vue de contrôler des nœuds distants, des utilisateurs lancent des **« playbooks »** (livres de jeu) à partir d’un nœud de contrôle grâce à Ansible Engine. 
+Manipuler Ansible consiste à écrire du texte géré sous forme de code informatique. En vue de contrôler des nœuds distants, des utilisateurs lancent des **« playbooks »** (livres de jeu) à partir d’un nœud de contrôle grâce à Ansible Engine.
+
+Ansible Engine utilise différents composants comme :
+-	Des modules 
+-	Des plugins
+-	Un API
+-	Un inventaire 
+-	Des collections
+
 
 ![archi](./images/archi.png)
 
