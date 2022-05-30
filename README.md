@@ -45,6 +45,7 @@ Ansible gère les différents équipements avec un accès à distance natif (tel
 Les modules fonctionnent grâce à **JSON** en sortie standard et peuvent être écrits dans n’importe quel langage de programmation. Le système utilise notamment **YAML** pour exprimer des descriptions réutilisables et traite les variables grâce à des modèles Jinja2.  
 Manipuler Ansible consiste à écrire du texte géré sous forme de code informatique. En vue de contrôler des nœuds distants, des utilisateurs lancent des **« playbooks »** (livres de jeu) à partir d’un nœud de contrôle grâce à Ansible Engine. 
 
+![archi](./images/archi.png)
 
 ## Rename this repository to publish your site
 
