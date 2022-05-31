@@ -7,7 +7,15 @@ Pour le lancement d'un playbook on utilise la commande **ansible-playbook** puis
 
 ## Lancement d'un playbook avec un fichier host en .ini
 
+```
+ansible-playbook -i hosts/file.ini playbooks/config.yml
+```
+
 ## Lancement d'un playbook avec un fichier host sécurisé écrit en yaml
+
+```
+ansible-playbook -i hosts/file.yaml playbooks/config.yml --vault-id user@prompt
+```
 
 ## Lancement d'un playbook avec activation de la verbosité 
 
