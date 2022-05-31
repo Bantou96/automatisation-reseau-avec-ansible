@@ -1,1 +1,20 @@
+- name: "DEMONSTRATE CONNECTING TO SWITCHES"
+  hosts: all
+  gather_facts: false
 
+  tasks:
+    - name: "GATHER FACTS"
+      cisco.ios.ios_facts:
+      when: ansible_network_os == 'cisco.ios.ios'
+
+    - name: "RENDER FACTS AS A REPORT"
+      template:
+        src: os_report.j2
+        dest: reports/{{ inventory_hostname }}.md
+
+    - name: "CONSOLIDATE THE IOS DATA"
+      assemble:
+        src: reports/
+        dest: network_os_report.md
+      delegate_to: localhost
+      run_once: yes
