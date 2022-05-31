@@ -5,7 +5,8 @@ J'ai créé une arborescence avec des fichiers en guise d'exemples de configurat
 - **hosts** --> contient des exemples de configuration d'un fichier host sous format ini et yaml
 - **cisco-playbook** --> contient des exemples de tâches à effectuer sur les équipements cisco notamment les switches et les routeurs
 - **parsers** --> contient un exemple d'extraction de données en JSON pour les commandes qui renvoient en sortie une panoplie d'informations
-- **templates-jinja2** --> contient un exemple de modélisation de données en utilisant du Jinja2   
+- **templates-jinja2** --> contient un exemple de modélisation de données en utilisant du Jinja2 
+- **output** --> contient le résultat de la commande show version avec utilisant du parser  
 
 
 Les fichiers suivantes peuvent être intéressants à voir : 
