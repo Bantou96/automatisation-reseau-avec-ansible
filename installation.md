@@ -23,5 +23,11 @@ ansible --version
 ```
 ![version](./images/version.png)
 
+Nous allons enfin créer un dossier de travail « ansible » 
+
+```
+mkdir /home/user/ansible
+
+```
 
 Et voilà !!! c'est simple comme bonjour  
