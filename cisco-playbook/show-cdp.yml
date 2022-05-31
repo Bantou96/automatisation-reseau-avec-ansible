@@ -1,0 +1,15 @@
+- name: "GENERATE CDP REPORT"
+  hosts: all
+  gather_facts: false
+
+  tasks:
+    - name: "CAPTURE SHOW CDP NEIGHBORS"
+      ios_command:
+        commands:
+          - show cdp neighbors detail
+      register: output
+
+    - name: "DISPLAY THE COMMAND OUTPUT"
+      debug:
+        var: output.stdout_lines
+      register: neighbors
