@@ -35,3 +35,10 @@ Et voilà !!! c'est simple comme bonjour
 
 ## Modification du fichier de configuration
 
+Avec la commande « ansible --version » nous avons pu localiser l'emplacement du fichier de configuration. Nous allons maintenant l'ouvrir avec la commande :
+
+```
+nano /etc/ansible/ansible.cfg
+
+```
+
