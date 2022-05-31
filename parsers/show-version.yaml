@@ -1,55 +1,55 @@
 ---
-- name: parser meta data
+- name: "PARSER META DATA"
   parser_metadata:
     version: 1.0
     command: show version
     network_os: cisco.ios.ios
 
-- name: match version values
+- name: "MATCH VERSION VALUES"
   pattern_group:
-    - name: match name
+    - name: "MATCH NAME"
       pattern_match:
         regex: "^(\\S+) uptime "
       register: name
 
-    - name: match IMAGE FILE
+    - name: "MATCH IMAGE FILE"
       pattern_match:
         regex: "System image file is (\\S+)"
       register: image
 
-    - name: match VIRTUAL INTERFACES
+    - name: "MATCH VIRTUAL INTERFACES"
       pattern_match:
         regex: "^(\\S+) Virtual Ethernet "
       register: virethint
 
-    - name: match GIGABIT INTERFACES
+    - name: "MATCH GIGABIT INTERFACES"
       pattern_match:
         regex: "^(\\S+) Gigabit Ethernet "
       register: gigethint
 
-    - name: match FAST INTERFACES
+    - name: "MATCH FAST INTERFACES"
       pattern_match:
         regex: "^(\\S+) FastEthernet "
       register: fastethint
 
-    - name: match SERIAL NUMBER
+    - name: "MATCH SERIAL NUMBER"
       pattern_match:
         regex: "System serial number.*: (\\S+)"
       register: SN
 
-    - name: match MODEL NUMBER
+    - name: "MATCH MODEL NUMBER"
       pattern_match:
         regex: "Model number.*: (\\S+)"
       register: MODEL
 
-    - name: match VERSION
+    - name: "MATCH VERSION"
       pattern_match:
         regex: "Cisco IOS Software, .+Version (\\S+),"
       register: version
   export: yes
   register: facts
 
-- name: generate json data structure
+- name: "GENERATE JSON DATA STRUCTURE"
   json_template:
     template:
       - key: "{{ facts.name.matches.0 }}"
