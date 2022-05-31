@@ -1,1 +1,24 @@
+ok: [LABO_BANTOU-01] => {
+    "version_facts": {
+        "LTB-4-sw2": {
+            "element": {
+                "MODEL": "WS-C3560-48PS-S",
+                "SN": "FDO1207X4N5",
+                "fastethint": "48",
+                "gigethint": "4",
+                "image": "\"flash:c3560-ipbasek9-mz.122-44.SE1/c3560-ipbasek9-mz.122-44.SE1.bin\"",
+                "name": "LABO_BANTOU-01",
+                "version": "12.2(44)SE1",
+                "virethint": "2"
 
+ok: [LABO_BANTOU-02] => {
+    "version_facts": {
+        "LTB-4-sw3": {
+            "element": {
+                "MODEL": "WS-C3560-48PS-S",
+                "SN": "FDO1207X4J0",
+                "fastethint": "48",
+                "gigethint": "4",
+                "image": "\"flash:c3560-ipbasek9-mz.122-44.SE1/c3560-ipbasek9-mz.122-44.SE1.bin\"",
+                "name": "LABO_BANTOU-02",
+                "version": "12.2(44
