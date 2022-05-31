@@ -11,11 +11,11 @@
           - show run | include ip dhcp pool
         register: output
 
-    - name: DISPLAY THE COMMAND OUTPUT
+    - name: "DISPLAY THE COMMAND OUTPUT"
       debug:
         var: output.stdout_lines
 
-    - name: transform output
+    - name: "TRANSFORM OUTPUT"
       set_fact:
         pools: "{{ pools | default([]) + [item | regex_replace('ip dhcp pool ', '')] }}"
       loop: "{{ output.stdout_lines[0] }}"
