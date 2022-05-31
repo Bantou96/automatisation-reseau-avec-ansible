@@ -1,1 +1,76 @@
+---
+- name: parser meta data
+  parser_metadata:
+    version: 1.0
+    command: show version
+    network_os: cisco.ios.ios
 
+- name: match version values
+  pattern_group:
+    - name: match name
+      pattern_match:
+        regex: "^(\\S+) uptime "
+      register: name
+
+    - name: match IMAGE FILE
+      pattern_match:
+        regex: "System image file is (\\S+)"
+      register: image
+
+    - name: match VIRTUAL INTERFACES
+      pattern_match:
+        regex: "^(\\S+) Virtual Ethernet "
+      register: virethint
+
+    - name: match GIGABIT INTERFACES
+      pattern_match:
+        regex: "^(\\S+) Gigabit Ethernet "
+      register: gigethint
+
+    - name: match FAST INTERFACES
+      pattern_match:
+        regex: "^(\\S+) FastEthernet "
+      register: fastethint
+
+    - name: match SERIAL NUMBER
+      pattern_match:
+        regex: "System serial number.*: (\\S+)"
+      register: SN
+
+    - name: match MODEL NUMBER
+      pattern_match:
+        regex: "Model number.*: (\\S+)"
+      register: MODEL
+
+    - name: match VERSION
+      pattern_match:
+        regex: "Cisco IOS Software, .+Version (\\S+),"
+      register: version
+  export: yes
+  register: facts
+
+- name: generate json data structure
+  json_template:
+    template:
+      - key: "{{ facts.name.matches.0 }}"
+        object:
+        - key: element
+          object:
+            - key: name
+              value: "{{ facts.name.matches.0 }}"
+            - key: image
+              value: "{{ facts.image.matches.0 }}"
+            - key: virethint
+              value: "{{ facts.virethint.matches.0 }}"
+            - key: gigethint
+              value: "{{ facts.gigethint.matches.0 }}"
+            - key: fastethint
+              value: "{{ facts.fastethint.matches.0 }}"
+            - key: SN
+              value: "{{ facts.SN.matches.0 }}"
+            - key: MODEL
+              value: "{{ facts.MODEL.matches.0 }}"
+            - key: version
+              value: "{{ facts.version.matches.0 }}"
+  export: yes
+  register: version_facts
