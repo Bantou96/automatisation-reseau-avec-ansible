@@ -31,3 +31,7 @@ mkdir /home/user/ansible
 ```
 
 Et voilà !!! c'est simple comme bonjour  
+
+
+## Modification du fichier de configuration
+
