@@ -42,3 +42,55 @@ nano /etc/ansible/ansible.cfg
 
 ```
 
+Dans le segment [defaults], nous allons décommenter la ligne forks et modifier la valeur par défaut du nombre de processus enfants qui sont lancés en simultanés. La valeur par défaut est 5 et nous allons le mettre à 3 afin d'éviter des erreurs de type : **cannot allocate memory**
+
+```
+[defaults]
+
+# some basic default values...
+
+#inventory      = /etc/ansible/hosts
+#library        = /usr/share/my_modules/
+#module_utils   = /usr/share/my_module_utils/
+#remote_tmp     = ~/.ansible/tmp
+#local_tmp      = ~/.ansible/tmp
+#plugin_filters_cfg = /etc/ansible/plugin_filters.yml
+forks          = 3
+#poll_interval  = 15
+#sudo_user      = root
+#ask_sudo_pass = True
+#ask_pass      = True
+#transport      = paramiko
+#remote_port    = 22
+#module_lang    = C
+#module_set_locale = False
+
+```
+
+Toujours dans ce segment nous allons désactiver la vérification de la clé SSH lors de l'établissement de la connexion sur nos équipements distants.
+
+```
+
+# uncomment this to disable SSH key host checking
+host_key_checking = False
+
+```
+
+Nous allons ensuite désactiver les messages d'alertes pour aller vers l'essentiel lorsqu'on aura des erreurs en sortie standard après l'exécution d'un playbook
+
+```
+
+# to disable these warnings, set the following value to False:
+deprecation_warnings = False
+
+```
+
+
+
+
+
+
+
+
+
+
