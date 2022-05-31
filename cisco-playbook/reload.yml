@@ -1,0 +1,15 @@
+---
+- name: "CONFIGURE SWITCHES"
+  hosts: all
+  gather_facts: false
+
+  tasks:
+
+    - name: "RELOAD DEVICE"
+      ios_command:
+        commands:
+          - "reload in 60\ny"
+          
+    - name: "CANCEL RELOAD"
+      cli_command:
+        command: reload cancel
