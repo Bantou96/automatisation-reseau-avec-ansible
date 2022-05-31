@@ -12,6 +12,7 @@ Les fichiers suivantes peuvent être intéressants à voir :
 
 - **ressources** --> contient des liens vers des documentations qui permettent de s'approprier le langage YAML et de mieux comprendre le fonctionnement de Ansible. 
 - **commandes-utiles** --> contient une liste de commandes nécessaire pour la sécurisation d'un fichier d'inventaire et pour le lancement des playbooks
+- **installation** --> contient une liste de commandes simples pour une installation sur une distribution Debian et les modifications importantes à apporter au niveau du fichier de configuration de Ansible afin d'éviter des erreurs lors du lancement des playbooks.  
 
 ### Pour mettre en valeur sa paresse un admin doit toujours trouver le moyen d'automatiser ses tâches
 
