@@ -17,7 +17,14 @@ ansible-playbook -i hosts/file.ini playbooks/config.yml
 ansible-playbook -i hosts/file.yaml playbooks/config.yml --vault-id user@prompt
 ```
 
-## Lancement d'un playbook avec activation de la verbosité 
+## Lancement d'un playbook avec activation de la verbosité
+
+```
+ansible-playbook -i hosts/file.yaml playbooks/config.yml --vault-id user@prompt -v || -vvvv
+```
 
 ## Lancement d'un playbook avec utilsation d'un tag
 
+```
+ansible-playbook -i hosts/file.yaml playbooks/config.yml --vault-id user@prompt --tags=tag_name
+```
