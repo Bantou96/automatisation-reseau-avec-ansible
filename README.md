@@ -8,7 +8,7 @@ Et oui !!! nous n'allons pas recréer la roue voyons !!!
 
 ![roue](./images/roue.jpg)
 
-Les fichiers suivantes peuvent être intéressants à voir : 
+Les fichiers suivants sont intéressants à voir pour l'implémentation de la solution Ansible : 
 
 - [installation]() --> contient une liste de commandes simples pour une installation sur une distribution Debian et les modifications importantes à apporter au niveau du fichier de configuration de Ansible afin d'éviter des erreurs lors du lancement des playbooks.  
 - [commandes-utiles]() --> contient une liste de commandes nécessaire pour la sécurisation d'un fichier d'inventaire et pour le lancement des playbooks
