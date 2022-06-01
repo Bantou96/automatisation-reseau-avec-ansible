@@ -21,7 +21,6 @@ Nous allons maintenant vérifier la version de Ansible installée et localiser l
 ansible --version
 
 ```
-![version](./images/version.png)
 
 Nous allons enfin créer un dossier de travail « ansible » 
 
