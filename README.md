@@ -1,4 +1,6 @@
-# INFOS
+# INFORMATIONS UTILES
+
+Le fichier [vue-d'ensemble] contient la partie théorique vous permettant de comprendre les enjeux de l'automatisation réseau et de comprendre le fonctionnement de l'outil Ansible. 
 
 J'ai créé une arborescence avec des fichiers en guise d'exemples de configurations.
 
