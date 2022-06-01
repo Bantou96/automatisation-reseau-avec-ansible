@@ -1,6 +1,6 @@
 # INFORMATIONS UTILES
 
-Le fichier [vue-d'ensemble] contient la partie théorique vous permettant de comprendre les enjeux de l'automatisation réseau et de comprendre le fonctionnement de l'outil Ansible. 
+Le fichier [vue-d'ensemble](https://github.com/Bantou96/automatisation-reseau-avec-ansible/blob/master/vue-d'ensemble.md) contient la partie théorique vous permettant de comprendre les enjeux de l'automatisation réseau et de comprendre le fonctionnement de l'outil Ansible. 
 
 J'ai créé une arborescence avec des fichiers en guise d'exemples de configurations.
 
