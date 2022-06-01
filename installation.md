@@ -73,7 +73,7 @@ look_for_keys = False
 
 ```
 
-Nous allons enfin ajouter un segment très important car il permettra d'éviter les erreurs de type **« cannot allocate memory »** c'est-à-dire une augmentation rapide de la consommation en RAM et du stockage d'informations temporaires lorsque l'on utilise le mode **debug** (option -vvvv) ou que les sorties de commandes lancées depuis le playbook sont volumineuses. Pour palier à ce problème, nous allons limiter la valeur de la sortie à 100 caractères. 
+Nous allons enfin ajouter un segment très important car il permettra d'éviter les erreurs de type **« cannot allocate memory »** c'est-à-dire une augmentation rapide de la consommation en RAM et de la consommation en mémoire de stockage temporaire lorsque l'on utilise le mode **debug** (option -vvvv) ou que les sorties de commandes lancées depuis le playbook sont volumineuses. Pour palier à ce problème, nous allons limiter la valeur de la sortie à 100 caractères. 
 
 Il va falloir ajouter le segment suivant à la fin du fichier de configuration (EOF --> End Of File)
 
