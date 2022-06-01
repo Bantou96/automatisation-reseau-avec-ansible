@@ -1,7 +1,7 @@
 
 # Sécurisation du fichier d'inventaire 
 
-La première étape consiste à faire la conversion en YAML de l'inventaire écrit en INI car le format ini n'intégre pas la fonctionnalité de création d'un coffre fort de mots de passe (VAULT). 
+La première étape consiste à faire la conversion en YAML de l'inventaire écrit en INI car le format ini n'intégre pas la fonctionnalité de création d'un coffre fort de mots de passe (VAULT). Je vous recommande d'écrire d'abord vos fichiers d'inventaire en ini et puis faire la conversion en yaml. c'est plus simple pour une première.
 
 ```
 ansible-inventory -i hosts/file.ini -y --list > file.yaml
