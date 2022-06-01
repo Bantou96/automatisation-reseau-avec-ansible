@@ -122,10 +122,10 @@ Les modèles de données sont transformés en configuration de périphériques e
 
 Le lien suivant vous mène vers un fichier contenant des informations importantes permettant de mieux comprendre l'arborescence et d'avoir un premier aperçu du contenu des répertoires et celui des autres fichiers. 
 
-[Informations utiles](https://github.com/Bantou96/automatisation-reseau-avec-ansible/blob/master/informations-utiles.md)
+[Informations utiles](https://github.com/Bantou96/automatisation-reseau-avec-ansible/blob/master/README.md)
 
 Vous pouvez y jeter un coup d'oeil 
 
 ![oeil](./images/oeil.jpg)
 
-[Informations utiles](https://github.com/Bantou96/automatisation-reseau-avec-ansible/blob/master/informations-utiles.md)
+[Informations utiles](https://github.com/Bantou96/automatisation-reseau-avec-ansible/blob/master/README.md)
