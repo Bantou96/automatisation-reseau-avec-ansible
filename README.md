@@ -22,9 +22,9 @@ J'ai créé une arborescence avec des fichiers en guise d'exemples de configurat
 - [output](https://github.com/Bantou96/automatisation-reseau-avec-ansible/tree/master/output) : contient le résultat de la commande show version avec utilisant du parser afin d'avoir une sortie en JSON sous forme de dictionnaire (couple clé/valeur).   
 - [bonus](https://github.com/Bantou96/automatisation-reseau-avec-ansible/tree/master/bonus) : contient un script Bash qui fait appel à expect pour l'activation du ssh sur plusieurs équipements. Puisque Ansible utilise une connexion SSH, cela peut être utile si jamais ssh n'est pas activé sur tous vos équipements switches ou routeurs. En plus de cela il y a un script qui permet de vérifier si un port est ouvert ou fermé.   
 
-### Pour mettre en valeur sa paresse un admin doit toujours trouver le moyen d'automatiser ses tâches
+### Inspirez-vous de ces exemples et réduisez le temps consacré à la recherche d'informations.
 
-Inspirez-vous de ces exemples, réduiser le temps de recherches d'informations et essayer de les faire évolués **(les futurs experts Ansible)** .
+
 
 
 
