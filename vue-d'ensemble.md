@@ -118,7 +118,7 @@ Les modèles de données sont transformés en configuration de périphériques e
 
 # IMPORTANT
 
-[Ce lien](https://iac.goffinet.org/ansible-network/ecrire-premier-playbook/) vous mène vers une documentation vous permettant de mieux comprendre la syntaxe du langage YAML et d'écrire vos premiers playbooks. 
+[Ce lien](https://iac.goffinet.org/ansible-network/ecrire-premier-playbook/) vous mène vers une documentation pour mieux comprendre la syntaxe du langage YAML et d'écrire vos premiers playbooks. 
 
 ![oeil](./images/oeil.jpg)
 
