@@ -4,4 +4,4 @@
 
 ## Je vous conseille fortement de découvrir le langage YAML avec :
 
-[Goffinet](https://iac.goffinet.org/ansible-network/ecrire-premier-playbook/)
+[Ecrire-son-premier-playbook](https://iac.goffinet.org/ansible-network/ecrire-premier-playbook/)
