@@ -16,7 +16,7 @@ Les logiciels d'automatisation sont aujourd'hui de plus en plus utilisés car el
 ## Choix de l'outil d'automatisation
 Au niveau le plus basique, il est possible d'automatiser les composants réseaux à l'aide de commandes et d'arguments de ligne de commande standard. Par exemple, on peut utiliser les opérateurs BASH pour créer des chaînes d'événements selon que la commande précédente a réussi (&&) ou échoué (||). Nous pouvons aussi compiler des listes de commandes dans des fichiers texte (aussi appelés scripts Shell), qui peuvent être exécutés de manière répétée et simultanée en une seule commande.
 
-Les outils d’automatisation open source Ansible, Salt et StackStorm peuvent être utilisés pour automatiser les périphériques réseau. 
+Les outils d’automatisation open source Ansible, Salt et StackStorm peuvent aussi être utilisés pour automatiser les périphériques réseau. 
 
 ![tableau](./images/tableau.PNG)
 
