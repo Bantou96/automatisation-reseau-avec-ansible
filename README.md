@@ -5,6 +5,7 @@ Le fichier suivant contient des informations utiles pour mieux comprendre l'arbo
 [Informations utiles](https://github.com/Bantou96/automatisation-reseau-avec-ansible/blob/master/informations-utiles.md)
 
 Vous pouvez y jeter un coup d'oeil 
+
 ![oeil](./images/oeil.jpg)
 
 [Informations utiles](https://github.com/Bantou96/automatisation-reseau-avec-ansible/blob/master/informations-utiles.md)
