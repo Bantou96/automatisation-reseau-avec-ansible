@@ -8,9 +8,9 @@ do
 
                 if [[ $res == "1" ]]
                 then
-                        echo $i >> ping_sw_ko
+                        echo $i >> ping_ko
                 else
-                        echo $i >> ping_sw_ok
+                        echo $i >> ping_ok
                 fi
 
 done
