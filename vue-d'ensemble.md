@@ -120,12 +120,10 @@ Les modèles de données sont transformés en configuration de périphériques e
 
 # IMPORTANT
 
-Le lien suivant vous mène vers un fichier contenant des informations importantes permettant de mieux comprendre l'arborescence et d'avoir un premier aperçu du contenu des répertoires et celui des autres fichiers. 
+Le lien suivant vous mène vers une documentation vous permettant de mieux comprendre la syntaxe du langage YAML et d'écrire vos premier playbooks. 
 
-[Informations utiles](https://github.com/Bantou96/automatisation-reseau-avec-ansible/blob/master/README.md)
-
-Vous pouvez y jeter un coup d'oeil 
+[ICI](https://github.com/Bantou96/automatisation-reseau-avec-ansible/blob/master/README.md) 
 
 ![oeil](./images/oeil.jpg)
 
-[Informations utiles](https://github.com/Bantou96/automatisation-reseau-avec-ansible/blob/master/README.md)
+[README](https://github.com/Bantou96/automatisation-reseau-avec-ansible/blob/master/README.md)
