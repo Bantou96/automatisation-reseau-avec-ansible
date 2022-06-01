@@ -26,8 +26,6 @@ Pour la suite de cette aventure sur l'automatisation réseau nous allons travail
 
 Cool non !!!
 
-![enjoy](./images/enjoy.png)
-
 ## Présentation de l'outil Ansible
 **Un peu d'histoire**
 
