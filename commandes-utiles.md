@@ -21,6 +21,7 @@ Pour le lancement d'un playbook on utilise la commande **ansible-playbook** puis
 
 - La cible du playbook en utilisant l'option **-i**
 - Le playbook à exécuter 
+- Les options supplémentaires (vault, verbose, tag, etc)
 
 ### Lancement d'un playbook avec un fichier host en .ini
 ```
