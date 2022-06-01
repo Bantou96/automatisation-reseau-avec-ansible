@@ -122,7 +122,7 @@ Les modèles de données sont transformés en configuration de périphériques e
 
 Le lien suivant vous mène vers une documentation vous permettant de mieux comprendre la syntaxe du langage YAML et d'écrire vos premier playbooks. 
 
-[ICI](https://github.com/Bantou96/automatisation-reseau-avec-ansible/blob/master/README.md) 
+[ICI](https://iac.goffinet.org/ansible-network/ecrire-premier-playbook/) 
 
 ![oeil](./images/oeil.jpg)
 
