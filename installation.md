@@ -72,7 +72,7 @@ task_output_limit = 100
 ```
 
 
-
+### Vous avez [ICI](https://github.com/Bantou96/automatisation-reseau-avec-ansible/blob/master/ansible.cfg) le lien vers le fichier complet de configuration. 
 
 
 
