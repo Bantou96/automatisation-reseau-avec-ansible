@@ -7,7 +7,6 @@ La première étape consiste à faire la conversion en YAML de l'inventaire écr
 ansible-inventory -i hosts/file.ini -y --list > file.yaml
 
 ```
-
 Puis on créé notre coffre fort de mots de passe en chiffrant le mot de passe qui s'affichait en clair sur le file.ini en AES256. l'option **name** prend comme argument le nom de la variable dans le fichier host qui va stocker le mot de passe que vous voulez chiffrer.
 
 ```
@@ -31,21 +30,18 @@ Pour le lancement d'un playbook on utilise la commande **ansible-playbook** puis
 ansible-playbook -i hosts/file.ini playbooks/config.yml
 
 ```
-
 ### Lancement d'un playbook avec activation de la verbosité
 
 ```
 ansible-playbook -i hosts/file.ini playbooks/config.yml -v || -vvvv
 
 ```
-
 ### Lancement d'un playbook avec utilsation d'un tag
 
 ```
 ansible-playbook -i hosts/file.ini playbooks/config.yml --tags=tag_name
 
 ```
-
 ### Lancement d'un playbook avec un fichier host sécurisé écrit en yaml
 
 ```
