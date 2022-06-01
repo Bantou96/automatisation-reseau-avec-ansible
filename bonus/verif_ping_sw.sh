@@ -1,6 +1,6 @@
 $#/bin/bash
 
-for i in $(cat ip_sw)
+for i in $(cat ip_list)
 do
                 ping -c 2 $i
                 res=$(echo $?)
