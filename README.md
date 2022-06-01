@@ -118,7 +118,7 @@ Ci-après le schéma qui illustre le fonctionnement des modèles Jinja2
 Les modèles de données sont transformés en configuration de périphériques et les sorties de périphériques peuvent être transformées en documentation. Le modèle permet aux utilisateurs de manipuler les variables, d’y appliquer une logique conditionnelle et répétitive et donc d’étendre la programmation dans l’automatisation du réseau. 
 
 
-# ****IMPORTANT****
+# IMPORTANT
 
 Le lien suivant vous mène vers un fichier contenant des informations importantes permettant de mieux comprendre l'arborescence et d'avoir un premier aperçu du contenu des répertoires et celui des autres fichiers. 
 
