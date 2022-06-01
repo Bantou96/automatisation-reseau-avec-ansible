@@ -2,7 +2,7 @@
 
 Le fichier [vue-d'ensemble](https://github.com/Bantou96/automatisation-reseau-avec-ansible/blob/master/vue-d'ensemble.md) contient la partie théorique vous permettant de comprendre les enjeux de l'automatisation réseau et de comprendre le fonctionnement de l'outil Ansible. 
 
-Le fichier [ressources](https://github.com/Bantou96/automatisation-reseau-avec-ansible/blob/master/ressources.md) contient des liens vers la documentation officiel de Ansible et un autre lien super important pour s'approprier le langage YAML et mieux comprendre sa syntaxe.
+Le fichier [ressources](https://github.com/Bantou96/automatisation-reseau-avec-ansible/blob/master/ressources.md) contient des liens vers la documentation officielle de Ansible et un autre lien super important pour s'approprier le langage YAML et mieux comprendre sa syntaxe.
 
 Et oui !!! nous n'allons pas recréer la roue voyons !!!
 
