@@ -120,7 +120,7 @@ Les modèles de données sont transformés en configuration de périphériques e
 
 # IMPORTANT
 
-Le fichier suivant contient des informations utiles pour mieux comprendre l'arborescence et avoir une aperçu du contenu des répertoires et fichiers. 
+Le lien suivant vous mène vers un fichier contenant des informations importantes permettant de mieux comprendre l'arborescence et avoir un premier aperçu du contenu des répertoires et celui des autres fichiers. 
 
 [Informations utiles](https://github.com/Bantou96/automatisation-reseau-avec-ansible/blob/master/informations-utiles.md)
 
