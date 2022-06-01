@@ -120,4 +120,4 @@ Les modèles de données sont transformés en configuration de périphériques e
 
 # A lire 
 
-![Informations utiles]https://github.com/Bantou96/automatisation-reseau-avec-ansible/blob/master/informations-utiles.md
+[Informations utiles](https://github.com/Bantou96/automatisation-reseau-avec-ansible/blob/master/informations-utiles.md)
