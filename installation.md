@@ -64,8 +64,7 @@ deprecation_warnings = False
 
 ```
 
-Ansible utilise paramiko pour envoyer des commandes SSH
-paramiko recherchera par défaut les clés SSH lors de la tentative de s'authentifier auprès des appareils distants. Ceci est un problème pour certains périphériques réseau qui ferme la connexion après un échec de clé. nous allons désactiver la fonction de recherche de clés de Paramiko.
+Ansible utilise paramiko pour envoyer des commandes SSH ainsi paramiko recherchera par défaut les clés SSH lors de la tentative de s'authentifier auprès des appareils distants. Ceci est un problème pour certains périphériques réseau qui ferme la connexion après un échec de clé. nous allons désactiver la fonction de recherche de clés de Paramiko.
 
 ```
 [paramiko_connection]
