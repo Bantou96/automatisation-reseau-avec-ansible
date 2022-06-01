@@ -27,4 +27,4 @@ J'ai créé une arborescence avec des fichiers en guise d'exemples de configurat
 
 #### N'hésitez pas à poser vos questions [ICI](https://github.com/Bantou96/automatisation-reseau-avec-ansible/discussions)
 
-
+![enjoy](./images/enjoy.png)
