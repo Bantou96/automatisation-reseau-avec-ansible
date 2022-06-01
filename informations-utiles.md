@@ -7,6 +7,7 @@ J'ai créé une arborescence avec des fichiers en guise d'exemples de configurat
 - **parsers** --> contient un exemple d'extraction de données en JSON pour les commandes qui renvoient en sortie une panoplie d'informations
 - **templates-jinja2** --> contient un exemple de modélisation de données en utilisant du Jinja2 
 - **output** --> contient le résultat de la commande show version avec utilisant du parser  
+- **bonus** --> contient un script Bash qui fait appel à expect pour l'activation du ssh sur plusieurs équipements. Il peut être utile si jamais ssh n'est pas activé sur tous vos équipements switches ou routeurs. En plus de cela il y a un script qui permet de vérifier si un port est ouvert ou fermé. 
 
 
 Les fichiers suivantes peuvent être intéressants à voir : 
