@@ -1,3 +1,14 @@
+# Important
+
+Le fichier suivant contient des informations utiles pour mieux comprendre l'arborescence et avoir une aperçu du contenu des répertoires et fichiers. 
+
+[Informations utiles](https://github.com/Bantou96/automatisation-reseau-avec-ansible/blob/master/informations-utiles.md)
+
+Vous pouvez y jeter un coup d'oeil 
+![oeil](./images/oeil.jpg)
+
+[Informations utiles](https://github.com/Bantou96/automatisation-reseau-avec-ansible/blob/master/informations-utiles.md)
+
 # Automatisation réseau
 
 Quand on est responsable d’un réseau d’entreprise, on sait probablement que de nombreuses opérations manuelles sont effectuées via l’interface de ligne de commande (CLI). Il n’est pas surprenant que le principal défi que rencontrent des utilisateurs en matière de réseau consiste à améliorer leur agilité.
