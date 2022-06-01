@@ -116,3 +116,8 @@ Ci-après le schéma qui illustre le fonctionnement des modèles Jinja2
 ![data](./images/jinja2.png)
 
 Les modèles de données sont transformés en configuration de périphériques et les sorties de périphériques peuvent être transformées en documentation. Le modèle permet aux utilisateurs de manipuler les variables, d’y appliquer une logique conditionnelle et répétitive et donc d’étendre la programmation dans l’automatisation du réseau. 
+
+
+# A lire 
+
+[Informations utiles]https://github.com/Bantou96/automatisation-reseau-avec-ansible/blob/master/informations-utiles.md
