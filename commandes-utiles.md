@@ -8,7 +8,7 @@ ansible-inventory -i hosts/file.ini -y --list > file.yaml
 
 ```
 
-Puis on créé notre coffre fort de mots de passe en chiffrant le mot de passe qui s'affichait en clair sur le file.ini en AES256
+Puis on créé notre coffre fort de mots de passe en chiffrant le mot de passe qui s'affichait en clair sur le file.ini en AES256. l'option **name** prend comme argument le nom de la variable dans le fichier host qui va stocker le mot de passe que vous voulez chiffrer.
 
 ```
 ansible-vault encrypt_string --vault-id user@prompt 'your_password' --name 'ansible_password'
@@ -16,6 +16,7 @@ ansible-vault encrypt_string --vault-id user@prompt 'your_password' --name 'ansi
 ansible-vault encrypt_string --vault-id user@prompt 'your_password' --name 'ansible_become_password'
 
 ```
+Lorsque vous exécutez une des commandes pour le vault. vous aurez un prompt qui vous demandera de mettre un autre mot de passe (master key comme dans keepass). Ce mot de passe vous sera demandé lorsque vous exécuterez votre playbook. Ainsi vous aurez sécurisé en même temps le lancement des playbooks.
 
 ## Lancement d'un playbook
 
