@@ -1,0 +1,25 @@
+
+---
+- name: "CONFIGURE CISCO SWITCHES WITH SECURITY FEATURES"
+  hosts: all
+  gather_facts: false
+
+  tasks:
+  
+    - name: "CONFIGURE SWITCH SECURITY BEST PRACTICES IN GLOBAL MODE"
+      ios_config: 
+        commands:
+          - service password-encryption
+          - no service password-recovery
+          - no ip domain-lookup
+          - no service pad
+          - no ip http server
+          - no ip http secure-server 
+          - mac address-table aging-time 14400
+          - mac address-table notification change
+          - mac address-table notification mac-move
+          - mls qos
+          - udld aggressive
+          - vlan dot1q tag native
+        match: exact
+      tags: hardening
