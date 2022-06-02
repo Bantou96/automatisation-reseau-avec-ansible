@@ -23,3 +23,16 @@
           - vlan dot1q tag native
         match: exact
       tags: hardening
+
+
+    - name: "CONFIGURE PARSER VIEW"
+      ios_config:
+        commands:
+          - secret 5 $(md5_password)
+          - commands exec include all traceroute
+          - commands exec include all ping
+          - commands exec exclude show startup-config
+          - commands exec include all show
+        parents: parser view access-su
+      tags: view
+ 
