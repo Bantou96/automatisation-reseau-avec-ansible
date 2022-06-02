@@ -1,0 +1,25 @@
+---
+- name: "CONFIGURE CISCO SWITCHES WITH SECURITY FEATURES"
+  hosts: all
+  gather_facts: false
+
+  tasks:
+
+    - name: "CREATE VLANS"
+      ios_config:
+        commands:
+          - name {{ item.name }}
+        parents: vlan {{ item.number }}
+      with_items:
+        - { name: 'admin', number: 10 }
+        - { name: 'user', number: 20}
+      tags: vlan
+
+    - name: "CONFIGURE INTERFACE VLAN"
+      ios_config:
+        commands:
+          - description MANAGEMENT
+          - ip address  <ip-add> <netmask>
+        parents: interface vlan 10
+        after: ip default-gateway <ip-add>
+      tags: ifvlan
