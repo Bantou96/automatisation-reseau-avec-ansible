@@ -1,0 +1,54 @@
+---
+- name: "CONFIGURE CISCO SWITCHES WITH SECURITY FEATURES"
+  hosts: all
+  gather_facts: false
+
+  tasks:    
+    
+    - name: "CONFIGURE INTERFACE IN ACCESS MODE"
+      ios_config:
+        commands:
+          - description {{ item.desc }}
+          - switchport mode access
+          - switchport access vlan {{ item.vlan_id }}
+          - switchport port-security
+          - switchport port-security maximum 3
+          - switchport port-security mac-address sticky
+          - switchport port-security violation shutdown
+          - switchport port-security aging time 1
+          - switchport port-security aging type inactivity
+          - spanning-tree bpdufilter enable
+          - spanning-tree bpduguard enable
+          - spanning-tree portfast edge
+          - storm-control broadcast level pps 500 250
+          - storm-control multicast level pps 150 
+          - storm-control action shutdown
+          - ip dhcp snooping trust
+        parents: interface {{ item.int_name }}
+      with_items: 
+        - { int_name: 'GigabitEthernetX/X', desc: 'DESCRIPTION', vlan_id: 00 }
+        - { int_name: 'range GigabitEthernetX/X-Y', desc: 'DESCRIPTION', vlan_id: 00 }
+        - { int_name: 'range GigabitEthernetX/X,GigabitEthernetX/Y', desc: 'DESCRIPTION', vlan_id: 00 }
+      tags: ifconfig-access
+
+
+    - name: "CONFIGURE INTERFACE IN TRUNK MODE"
+      ios_config:
+        commands:
+          - description {{ item.desc }}
+          - switchport mode trunk
+          - switchport trunk allowed vlan {{ item.vlans_id }}
+          - switchport nonegotiate
+          - switchport trunk native vlan {{ item.native }}
+          - spanning-tree guard root
+          - mls qos trust cos
+          - storm-control broadcast level pps 500
+          - storm-control multicast level pps 2k 1K
+          - storm-control action shutdown
+          - ip dhcp snooping trust
+        parents: interface {{ item.int_name}}
+      with_items: 
+        - { int_name: 'GigabitEthernetX/X', desc: 'DESCRIPTION', vlans_id: '00,00,...', native: 00 }
+        - { int_name: 'range GigabitEthernetX/X-Y', desc: 'DESCRIPTION', vlans_id: '00,00,...', native: 00 }
+        - { int_name: 'range GigabitEthernetX/X,GigabitEthernetX/Y', desc: 'DESCRIPTION', vlans_id: '00,00,...', native: 00 }
+      tags: ifconfig-trunk
