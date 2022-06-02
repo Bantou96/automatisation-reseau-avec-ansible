@@ -1,0 +1,31 @@
+---
+- name: "CONFIGURE CISCO SWITCHES WITH SECURITY FEATURES"
+  hosts: all
+  gather_facts: false
+
+  tasks:
+
+    - name: "CONFIGURE SSH OPTION"
+      ios_config:
+        commands:
+          - ip domain-name name.dom
+          - crypto key generate rsa general-keys modulus 2048
+          - ip ssh version 2
+          - ip ssh logging events
+          - ip ssh time-out 60
+          - ip ssh authentication-retries 3
+        match: exact
+      tags: ssh
+
+    - name: "CONFIGURE LINE VTY"
+      ios_config:
+        commands:
+          - transport input ssh
+          - logging synchronous
+          - transport preferred ssh
+          - transport output ssh
+        parents: line vty 0 15
+        match: exact
+      tags: line-vty
+      
+      
