@@ -1,0 +1,11 @@
+
+---
+- name: "CONFIGURE CISCO SWITCHES WITH SECURITY FEATURES"
+  hosts: all
+  gather_facts: false
+
+  tasks:
+
+    - name: "SAVE CONFIGURATION"
+      cli_command:
+        command: write
