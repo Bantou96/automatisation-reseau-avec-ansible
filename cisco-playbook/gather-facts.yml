@@ -9,12 +9,12 @@
 
     - name: "RENDER FACTS AS A REPORT"
       template:
-        src: os_report.j2
+        src: templates-jinja2/os_report.j2
         dest: reports/{{ inventory_hostname }}.md
 
     - name: "CONSOLIDATE THE IOS DATA"
       assemble:
         src: reports/
-        dest: network_os_report.md
+        dest: os_report.md
       delegate_to: localhost
       run_once: yes
