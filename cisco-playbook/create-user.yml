@@ -1,0 +1,37 @@
+---
+- name: "CONFIGURE CISCO SWITCHES WITH SECURITY FEATURES"
+  hosts: all
+  gather_facts: false
+
+  tasks:
+  
+    - name: "REMOVE EXISTING USER"
+      no_log: true
+      ios_user:
+        name: [Your_User]
+        hashed_password:
+          type: 7
+          value: $9[Your_Type9_Encrypt_Password]
+        state: absent
+
+    - name: "CREATE USER READ WRITE"
+      no_log: true
+      ios_user:
+        name: [Your_Super_User]
+        privilege: 15
+        hashed_password:
+          type: 9
+          value: $9[Your_Type9_Encrypt_Password]
+        state: present
+      tags: rw_user
+
+    - name: "CREATE USER READ ONLY"
+      no_log: true
+      ios_user:
+        name: [Your_ReadOnly_User]
+        privilege: 7
+        hashed_password:
+          type: 9
+          value: $9[Your_Type9_Encrypt_Password]
+        state: present
+      tags: ro_user
