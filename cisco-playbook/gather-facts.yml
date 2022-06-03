@@ -1,4 +1,4 @@
-- name: "DEMONSTRATE CONNECTING TO SWITCHES"
+- name: "SWITCHES INVENTORY"
   hosts: all
   gather_facts: false
 
