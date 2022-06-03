@@ -1,6 +1,6 @@
 
 ---
-- name: "UPDATE DHCP OPTIONS FOR FNAC-FRANCHISE SWITCHES"
+- name: "UPDATE DHCP OPTIONS FOR SWITCHES OR ROUTERS"
   hosts: all
   gather_facts: false
 
