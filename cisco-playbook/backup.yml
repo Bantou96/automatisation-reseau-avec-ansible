@@ -42,3 +42,5 @@
         path: "{{fullpath}}"
         regexp: 'Current configuration.*'
         state: absent
+
+
