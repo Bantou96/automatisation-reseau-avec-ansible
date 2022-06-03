@@ -12,7 +12,6 @@ all:
               ansible_host: 10.20.0.7
       vars:
         ansible_connection: ansible.netcommon.network_cli
-        ansible_user: ansible
         ansible_network_os: cisco.ios.ios
         ansible_user: bantou
         ansible_password: !vault |
