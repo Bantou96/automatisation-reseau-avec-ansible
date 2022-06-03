@@ -1,5 +1,5 @@
 ---
-- name: "CONFIGURE CISCO SWITCHES WITH SECURITY FEATURES"
+- name: "CONFIGURE CISCO SWITCHES"
   hosts: all
   gather_facts: false
 
