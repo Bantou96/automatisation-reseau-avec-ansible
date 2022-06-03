@@ -1,5 +1,5 @@
 ---
-- name: "CONFIGURE SWITCHES"
+- name: "CONFIGURE SWITCHES OR ROUTERS"
   hosts: all
   gather_facts: false
 
