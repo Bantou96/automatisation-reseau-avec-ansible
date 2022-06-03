@@ -11,6 +11,11 @@
     fullpath: "{{backup_directory}}/{{backup_filename}}"
 
   tasks:
+  
+    - setup:
+        gather_subset:
+          - min
+
     - name: "ENSURE THAT THE DESTINATION PATH EXISTS"
       file:
         path: "{{backup_directory}}"
@@ -28,6 +33,7 @@
 
     - name: "REMOVE NON CONFIG LINES"
       lineinfile:
+        path: "{{fullpath}}"
         line: "Building configuration..."
         state: absent
 
